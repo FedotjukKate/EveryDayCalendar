@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         self.groupBox.setObjectName("groupBox")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.groupBox)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.listView = QtWidgets.QListView(self.groupBox)
+        self.listView = QtWidgets.QListWidget(self.groupBox)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.listView.setFont(font)
