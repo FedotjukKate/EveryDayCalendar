@@ -44,7 +44,7 @@ class DrawFractal(QWidget):
 
 
     def initUI(self):
-        self.setGeometry(300, 300, *SCREEN_SIZE)
+        self.setGeometry(500, 500, *SCREEN_SIZE)
         self.setWindowTitle('Рисуем звезду')
 
         self.btn = QPushButton("Рисуй", self)
@@ -71,8 +71,8 @@ class DrawFractal(QWidget):
         return SCREEN_SIZE[1] // 2 - y
 
     def draw_fractal(self, qp):
-        current_x, current_y = 0, 0
-        fractal = self.fractal.calculate_epochs(3)
+        current_x, current_y = -800, -500
+        fractal = self.fractal.calculate_epochs(5)
         angle = 0
         for sym in fractal:
             if sym == 'f' or sym == "F":
